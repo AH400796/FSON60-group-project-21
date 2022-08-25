@@ -1,24 +1,34 @@
 .order__btn {
-    padding: 6px 17px;
+  @extend %button;
 
-    display: none;
+  display: none;
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    text-align: right;
-    color: $color-primary-text;
+  @media screen and (min-width: $tablet) {
+    display: block;
 
-    border: none;
-    background-color: $color-accent;
-    border-radius: 30px;
-
-    @media screen and (min-width: 768px) {
-        display: block;
-
-        &:hover,
-        &:focus {
-            background-color: $color-button-active;
-        }
+    &:hover,
+    &:focus {
+      background-color: $color-button-active;
     }
+  }
+}
+
+.subscription__btn {
+  @extend %button;
+
+  display: block;
+
+  padding-top: 10px;
+  padding-right: 22px;
+  padding-bottom: 11px;
+  padding-left: 22px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-button-active;
+  }
+
+  @media screen and (max-width: ($tablet - 0.02px)) {
+    margin-left: auto;
+  }
 }

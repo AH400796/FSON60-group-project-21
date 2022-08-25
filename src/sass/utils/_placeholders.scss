@@ -5,3 +5,21 @@
 %list {
   list-style: none;
 }
+
+%button {
+  padding-top: 6px;
+  padding-right: 17px;
+  padding-bottom: 6px;
+  padding-left: 17px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: calc(21 / 14);
+  text-align: center;
+
+  color: $color-primary-text;
+
+  border: none;
+  background-color: $color-accent;
+  border-radius: 30px;
+}
