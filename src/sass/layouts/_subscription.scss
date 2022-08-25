@@ -1,0 +1,90 @@
+.subscription {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.subscription__decor-image {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 17px;
+
+  width: 161px;
+  height: 78px;
+
+  background-image: url('../images/subscription/banana-mob-161@1x.png');
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/subscription/banana-mob-322@2x.png');
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+    margin-right: 0;
+
+    width: 281px;
+    height: 136px;
+
+    background-image: url('../images/subscription/banana-tab-281@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/subscription/banana-tab-562@2x.png');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    order: 2;
+    width: 546px;
+    height: 266px;
+    margin-right: 0;
+
+    background-image: url('../images/subscription/banana-desk-546@1x.png');
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/subscription/banana-desk-1092@2x.png');
+  }
+}
+
+.subscription__wrapper {
+  @media screen and (min-width: $tablet) {
+    width: 656px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 38px;
+  }
+}
+
+.subscription__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(34 / 28);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 42px;
+  }
+}
+
+.subscription__text {
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: calc(16 / 14);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 24px;
+
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
