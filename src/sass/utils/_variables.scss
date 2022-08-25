@@ -1,0 +1,21 @@
+//     Fonts
+$font-text: 'Roboto', sans-serif;
+
+//     Colors
+$color-primary-text: #2c2c2c;
+$color-background: rgba(255, 255, 255, 0.5);
+$color-accent: #bbf330;
+$color-button-active: #b5ff00;
+$color-border-btn: #7eb101;
+$color-border-btn-active: #597d00;
+$color-main-theme: #ffe550;
+$color-warning: #ff705d;
+
+//     Shadows
+$shadow-header: 0px 4px 24px rgba(105, 105, 105, 0.1);
+$shadow-footer: 0px -4px 24px rgba(105, 105, 105, 0.1);
+$shadow-slider-arrow-click: 0px 4px 4px rgba(0, 0, 0, 0.16);
+$shadow-slider-arrow-defaul-or-hover: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+//     Transition properties
+$timing-function-trans-duration: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
