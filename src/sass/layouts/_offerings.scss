@@ -36,20 +36,27 @@
 
 
     @media screen and (min-width:$tablet ){
-        background-image: url(../../images/offerings/appleBg-tabl-704@1x.png);
+        background-image: url(../images/offerings/appleBg-tabl-704@1x.png);
 
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 .offerings__decor-img {
-                    background-image: url(../../images/offerings/appleBg-tabl-1408@2x.png);
+                    background-image: url(../images/offerings/appleBg-tabl-1408@2x.png);
                 }
             }
     }
 
 }
 
-
+.offerings__about {
+   
+   @media screen  and (min-width:$tablet){
+    
+       margin-right: 210px;
+       margin-bottom: 40px;
+   }
+}
 
 
 .offerings__about__title {
@@ -70,11 +77,25 @@
 
 
 .offerings__benefits__list {
-    @extend %list
+@extend %list;
+
+
+@media screen and (min-width){
+    
+    display: flex;
+}
+
 }
 
 .offerings__benefits__item {
     margin-bottom: 28px;
+
+@media screen and (min-width) {
+        margin-bottom: 40px;
+        margin-right: 116px;
+        width: 252px;
+    }
+
 }
 
 
