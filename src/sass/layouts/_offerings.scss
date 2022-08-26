@@ -1,1 +1,21 @@
+.offerings {
+    background-image: url(../images/offerings/offeringsBg-mob.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 
+    background-size: cover;
+
+}
+
+
+.offerings__decor-img {
+    background-image: url(./images/offerings/appleBg-mob-280@1x.png);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .offerings__decor-img {
+        background-image: url(./images/offerings/appleBg-mob-560@2x.png);
+    }
+}
