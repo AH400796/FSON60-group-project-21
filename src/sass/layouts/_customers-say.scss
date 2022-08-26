@@ -1,7 +1,6 @@
-.customers {
+.customers__container {
   padding-top: 60px;
   padding-bottom: 62px;
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,6 +15,7 @@
   @media screen and (min-width: $desktop) {
     padding-top: 100px;
     padding-bottom: 213px;
+    padding-right: 123px;
     background-image: url('../images/customers/customersBg-desk.svg');
   }
 }
@@ -23,12 +23,14 @@
 .customers__title {
   margin-bottom: 20px;
 
-  max-width: 280px;
   font-size: 28px;
   line-height: 1.18;
 
+  @media screen and (max-width: ($tablet - 0.02px)) {
+    max-width: 280px;
+  }
+
   @media screen and (min-width: $tablet) {
-    width: 100%;
     font-size: 42px;
     line-height: 1.16;
   }
@@ -36,14 +38,16 @@
 
 .customers__text {
   margin-bottom: 32px;
-  max-width: 280px;
 
   font-size: 14px;
   line-height: 1.14;
 
+  @media screen and (max-width: ($tablet - 0.02px)) {
+    max-width: 280px;
+  }
+
   @media screen and (min-width: $tablet) {
     margin-bottom: 48px;
-    width: 100%;
 
     font-size: 16px;
     line-height: 1.19;
@@ -73,6 +77,7 @@
 
 .customers__review {
   padding: 8px;
+  width: 100%;
 
   background-color: $color-input-background;
 
@@ -83,8 +88,11 @@
   @media screen and (min-width: $tablet) {
     padding: 12px;
   }
+
   @media screen and (min-width: $desktop) {
     padding: 14px;
+
+    flex-basis: calc((100% - 139px) / 2);
   }
 }
 
