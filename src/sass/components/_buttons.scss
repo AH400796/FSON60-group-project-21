@@ -77,10 +77,11 @@
   display: block;
 
   padding: 10px 34px 10px 31px;
-  border: $color-border-btn;
+  color: $color-input-background;
+  border: $color-border-btn 2px solid;
 
   &:hover,
   &:focus {
-    border: $color-border-btn-active;
+    border: $color-border-btn-active 2px solid;
   }
 }
