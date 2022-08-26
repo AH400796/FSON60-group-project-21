@@ -75,5 +75,7 @@
 
 
 .offerings__under__link {
-    @extend %link
+    @extend %link ;
+
+    margin-left: 20px ;
 }
