@@ -58,6 +58,10 @@
     width: 394px;
   }
 
+  &::placeholder {
+    color: transparent;
+  }
+
   &:not(:placeholder-shown):required:valid {
     border-color: $color-border-btn;
     background-color: $color-input-background;
