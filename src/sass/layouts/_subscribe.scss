@@ -21,6 +21,9 @@
   width: 161px;
   height: 78px;
 
+  background-repeat: no-repeat;
+  background-size: 161px 78px;
+
   background-image: url('../images/subscription/banana-mob-161@1x.png');
 
   @media (min-device-pixel-ratio: 2),
@@ -35,6 +38,8 @@
 
     width: 281px;
     height: 136px;
+
+    background-size: 281px 136px;
 
     background-image: url('../images/subscription/banana-tab-281@1x.png');
 
@@ -52,13 +57,15 @@
     height: 266px;
     margin-right: 0;
 
-    background-image: url('../images/subscription/banana-desk-546@1x.png');
-  }
+    background-size: 546px 266px;
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url('../images/subscription/banana-desk-1092@2x.png');
+    background-image: url('../images/subscription/banana-desk-546@1x.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/subscription/banana-desk-1092@2x.png');
+    }
   }
 }
 

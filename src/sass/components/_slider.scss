@@ -1,0 +1,40 @@
+.hero__slider {
+  position: relative;
+  display: none;
+
+  @media screen and (max-width: ($desktop - 0.02px)) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+
+    width: 336px;
+    height: 320px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 608px;
+    height: 580px;
+  }
+}
+
+.slider__img-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  width: 320px;
+  height: 320px;
+
+  background: $color-input-background;
+  border: 14px solid $color-main-theme;
+  border-radius: 50%;
+
+  @media screen and (min-width: $desktop) {
+    width: 580px;
+    height: 580px;
+
+    border: 26px solid $color-main-theme;
+  }
+}
