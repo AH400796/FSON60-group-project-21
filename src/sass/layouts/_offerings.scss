@@ -66,3 +66,14 @@
 
     margin-bottom: 16px;
 }
+
+.offerings__benefits__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+}
+
+
+.offerings__under__link {
+    @extend %link
+}

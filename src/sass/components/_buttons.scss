@@ -71,3 +71,16 @@
     padding-right: 13px;
   }
 }
+
+.offerings__under__btn {
+  @extend %button;
+  display: block;
+
+  padding: 10px 34px 10px 31px;
+  border: $color-border-btn;
+
+  &:hover,
+  &:focus {
+    border: $color-border-btn-active;
+  }
+}
