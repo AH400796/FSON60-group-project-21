@@ -46,12 +46,9 @@
 
 .hero__slider-btn--left {
   @extend %slider-button;
-  position: absolute;
-  left: 0;
+
   top: 50%;
-
-  transform: translateY(-50%);
-
+  left: 0;
   padding-left: 9px;
   padding-right: 13px;
 
@@ -64,12 +61,8 @@
 .hero__slider-btn--right {
   @extend %slider-button;
 
-  position: absolute;
-  right: 0;
   top: 50%;
-
-  transform: translateY(-50%);
-
+  right: 0;
   padding-left: 13px;
   padding-right: 9px;
 
