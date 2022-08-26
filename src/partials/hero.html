@@ -10,55 +10,60 @@
       <button class="hero__btn" type="button">Order Now</button>
     </div>
     <div class="hero__slider">
-      <svg class="hero__slider-btn--left">
+      <svg class="hero__slider-btn--left swiper-button-prev">
         <use href="./images/icon.svg#leftArrow"></use>
       </svg>
-      <div class="slider__img-wrapper">
-        <img
-          srcset="
-            ./images/hero/slide1-desk-528@1x.png   528w,
-            ./images/hero/slide1-desk-1056@2x.png 1056w,
-            ./images/hero/slide1-tabl-292@1x.png   292w,
-            ./images/hero/slide1-tabl-584@2x.png   584w
-          "
-          sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px"
-          class="slider__img"
-          src="./images/hero/slide1-tabl-292@1x.png"
-          alt="Falafel"
-          width="528"
-          height="528"
-        />
-        <!-- <img
-        srcset="
-          ./images/hero/slide2-desk-528@1x.png   528w,
-          ./images/hero/slide2-desk-1056@2x.png 1056w,
-          ./images/hero/slide2-tabl-292@1x.png   292w,
-          ./images/hero/slide2-tabl-584@2x.png   584w
-        "
-        sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px"
-        class="slider__img"
-        src="../images/hero/slide1-tabl-292@1x.png"
-        alt="Greek salad"
-        width="528"
-        height="528"
-      />
-      <img
-        srcset="
-          ./images/hero/slide3-desk-528@1x.png   528w,
-          ./images/hero/slide3-desk-1056@2x.png 1056w,
-          ./images/hero/slide3-tabl-292@1x.png   292w,
-          ./images/hero/slide3-tabl-584@2x.png   584w
-        "
-        sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px"
-        class="slider__img"
-        src="../images/hero/slide1-tabl-292@1x.png"
-        alt="Poached Eggs"
-        width="528"
-        height="528"
-      /> -->
-        <svg class="hero__slider-btn--right">
-          <use href="./images/icon.svg#rightArrow"></use>
-        </svg>
+      <svg class="hero__slider-btn--right swiper-button-next">
+        <use href="./images/icon.svg#rightArrow"></use>
+      </svg>
+      <div class="slider__img-wrapper swiper">
+        <div class="swiper-wrapper">
+          <img
+            class="swiper-slide"
+            srcset="
+              ./images/hero/slide1-desk-528@1x.png   528w,
+              ./images/hero/slide1-desk-1056@2x.png 1056w,
+              ./images/hero/slide1-tabl-292@1x.png   292w,
+              ./images/hero/slide1-tabl-584@2x.png   584w
+            "
+            sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px"
+            class="slider__img"
+            src="./images/hero/slide1-tabl-292@1x.png"
+            alt="Falafel"
+            width="528"
+            height="528"
+          />
+          <img
+            class="swiper-slide"
+            srcset="
+              ./images/hero/slide2-desk-528@1x.png   528w,
+              ./images/hero/slide2-desk-1056@2x.png 1056w,
+              ./images/hero/slide2-tabl-292@1x.png   292w,
+              ./images/hero/slide2-tabl-584@2x.png   584w
+            "
+            sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px"
+            class="slider__img"
+            src="./images/hero/slide1-tabl-292@1x.png"
+            alt="Greek salad"
+            width="528"
+            height="528"
+          />
+          <img
+            class="swiper-slide"
+            srcset="
+              ./images/hero/slide3-desk-528@1x.png   528w,
+              ./images/hero/slide3-desk-1056@2x.png 1056w,
+              ./images/hero/slide3-tabl-292@1x.png   292w,
+              ./images/hero/slide3-tabl-584@2x.png   584w
+            "
+            sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px"
+            class="slider__img"
+            src="./images/hero/slide1-tabl-292@1x.png"
+            alt="Poached Eggs"
+            width="528"
+            height="528"
+          />
+        </div>
       </div>
     </div>
   </div>
