@@ -35,3 +35,34 @@
     
     margin-bottom: 28px;
 }
+
+.offerings__about__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+
+    margin-bottom: 28px;
+}
+
+
+.offerings__benefits__list {
+    @extend %list
+}
+
+.offerings__benefits__item {
+    margin-bottom: 28px;
+}
+
+
+.offerings__benefits__icon {
+    margin-bottom: 8px;
+}
+
+
+.offerings__benefits__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    margin-bottom: 16px;
+}
