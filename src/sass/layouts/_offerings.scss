@@ -10,16 +10,12 @@
         
             @media screen and (min-width:$tablet) {
                 background-image: url(../images/offerings/offeringsBg-tabl.svg);
+                padding-top: 100px;
             }
 
 
-    @media screen and (min-width:$tablet) {
-        padding-top: 100px;
-    }
-
-
          @media screen and (min-width:$desktop){
-
+            background-image: url(../images/offerings/offeringsBg-desk.svg);
             display: flex;
          }
 
