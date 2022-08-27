@@ -93,3 +93,21 @@
     padding-right: 13px;
   }
 }
+
+.offerings__under__btn {
+  @extend %button;
+
+  padding: 10px 34px 10px 31px;
+  background-color: $color-input-background;
+  border: $color-border-btn 2px solid;
+
+  &:hover,
+  &:focus {
+    border: $color-border-btn-active 2px solid;
+  }
+
+  @media screen and (min-width:$desktop) {
+    padding: 10px 22px;
+  }
+
+}
