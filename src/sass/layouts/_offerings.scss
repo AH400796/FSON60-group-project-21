@@ -92,8 +92,11 @@
 
 @media screen and (min-width:$tablet) {
         margin-bottom: 40px;
-        margin-right: 116px;
         width: 252px;
+
+        &:first-child {
+            margin-right: 116px;
+        }
     }
 
 }
@@ -107,7 +110,7 @@
 .offerings__benefits__title {
     font-weight: 700;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.16;
 
     margin-bottom: 16px;
 }
@@ -121,6 +124,11 @@
 
 .offerings__under {
     padding-bottom: 60px ;
+
+    @media screen and (min-width:$tablet) {
+
+        padding-bottom: 100px;
+    }
 }
 
 
