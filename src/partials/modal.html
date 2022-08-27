@@ -1,0 +1,323 @@
+<!--Modal -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="backdrop__modal">
+    <button class="modal__close-btn" type="button" data-modal-close>
+      <svg class="modal__btn-icon" width="50" height="50">
+        <use href="./images/icon.svg#modal-close"></use>
+      </svg>
+    </button>
+    <srtong class="order__title"
+      >Please select your dish, specify the quantity and place your order - and
+      we will deliver it as soon as possible!</srtong
+    >
+    <div class="order__wrapper">
+      <svg class="offerings__benefits__icon" width="75" height="75">
+        <use href="./images/icon.svg#order"></use>
+      </svg>
+
+      <svg class="offerings__benefits__icon icon-right" width="75" height="75">
+        <use href="./images/icon.svg#delivery"></use>
+      </svg>
+    </div>
+    <ul class="menu">
+      <li class="menu__item">
+        <p class="dish__name">Gamburger</p>
+        <div class="dish__wrapper">
+          <img src="./images/modal/gamburger-tabl-268@1x.png" alt="Salad" />
+          <span class="dish__price">4.5€</span>
+        </div>
+        <form class="order__form">
+          <label class="checkbox__label">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="choise"
+              value="agree"
+              data-dish-is-checked
+            />
+            <span class="checkbox__custom">
+              <svg class="checkbox__custom-icon" width="50" height="50">
+                <use href="./images/icon.svg#check-mark"></use>
+              </svg>
+            </span>
+          </label>
+          <span class="quantity__field" data-quantity>
+            <input
+              class="quantity"
+              type="number"
+              name="quantity"
+              id="quantity"
+              required
+              placeholder=""
+            />
+          </span>
+        </form>
+      </li>
+      <li class="menu__item">
+        <p class="dish__name">Salmon salad</p>
+        <div class="dish__wrapper">
+          <img src="./images/modal/salad-tabl-268@1x.png" alt="Salad" />
+          <span class="dish__price">10€</span>
+        </div>
+        <form class="order__form">
+          <label class="checkbox__label">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="choise"
+              value="agree"
+              data-dish-is-checked1
+            />
+            <span class="checkbox__custom">
+              <svg class="checkbox__custom-icon" width="50" height="50">
+                <use href="./images/icon.svg#check-mark"></use>
+              </svg>
+            </span>
+          </label>
+          <span class="quantity__field" data-quantity1>
+            <input
+              class="quantity"
+              type="number"
+              name="quantity"
+              id="quantity"
+              required
+              placeholder=""
+            />
+          </span>
+        </form>
+      </li>
+      <li class="menu__item">
+        <p class="dish__name">Greek salad</p>
+        <div class="dish__wrapper">
+          <img src="./images/modal/greek-salad-tabl-268@1x.png" alt="Salad" />
+          <span class="dish__price">6€</span>
+        </div>
+        <form class="order__form">
+          <label class="checkbox__label">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="choise"
+              value="agree"
+              data-dish-is-checked2
+            />
+            <span class="checkbox__custom">
+              <svg class="checkbox__custom-icon" width="50" height="50">
+                <use href="./images/icon.svg#check-mark"></use>
+              </svg>
+            </span>
+          </label>
+          <span class="quantity__field" data-quantity2>
+            <input
+              class="quantity"
+              type="number"
+              name="quantity"
+              id="quantity"
+              required
+              placeholder=""
+            />
+          </span>
+        </form>
+      </li>
+      <li class="menu__item">
+        <p class="dish__name">Poached Eggs</p>
+        <div class="dish__wrapper">
+          <img src="./images/modal/poached-eggs-tabl-268@1x.png" alt="Salad" />
+          <span class="dish__price">5.5€</span>
+        </div>
+        <form class="order__form">
+          <label class="checkbox__label">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="choise"
+              value="agree"
+              data-dish-is-checked3
+            />
+            <span class="checkbox__custom">
+              <svg class="checkbox__custom-icon" width="50" height="50">
+                <use href="./images/icon.svg#check-mark"></use>
+              </svg>
+            </span>
+          </label>
+          <span class="quantity__field" data-quantity3>
+            <input
+              class="quantity"
+              type="number"
+              name="quantity"
+              id="quantity"
+              required
+              placeholder=""
+            />
+          </span>
+        </form>
+      </li>
+      <li class="menu__item">
+        <p class="dish__name">Falafel</p>
+        <div class="dish__wrapper">
+          <img src="./images/modal/falafel-tabl-268@1x.png" alt="Salad" />
+          <span class="dish__price">15€</span>
+        </div>
+        <form class="order__form">
+          <label class="checkbox__label">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="choise"
+              value="agree"
+              data-dish-is-checked4
+            />
+            <span class="checkbox__custom">
+              <svg class="checkbox__custom-icon" width="50" height="50">
+                <use href="./images/icon.svg#check-mark"></use>
+              </svg>
+            </span>
+          </label>
+          <span class="quantity__field" data-quantity4>
+            <input
+              class="quantity"
+              type="number"
+              name="quantity"
+              id="quantity"
+              required
+              placeholder=""
+            />
+          </span>
+        </form>
+      </li>
+      <li class="menu__item">
+        <p class="dish__name">Rice with chicken</p>
+        <div class="dish__wrapper">
+          <img src="./images/modal/chicken-tabl-268@1x.png" alt="Salad" />
+          <span class="dish__price">6.5€</span>
+        </div>
+        <form class="order__form">
+          <label class="checkbox__label">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="choise"
+              value="agree"
+              data-dish-is-checked5
+            />
+            <span class="checkbox__custom">
+              <svg class="checkbox__custom-icon" width="50" height="50">
+                <use href="./images/icon.svg#check-mark"></use>
+              </svg>
+            </span>
+          </label>
+          <span class="quantity__field" data-quantity5>
+            <input
+              class="quantity"
+              type="number"
+              name="quantity"
+              id="quantity"
+              required
+              placeholder=""
+            />
+          </span>
+        </form>
+      </li>
+      <li class="menu__item">
+        <p class="dish__name">Borshch</p>
+        <div class="dish__wrapper">
+          <img src="./images/modal/borshch-tabl-268@1x.png" alt="Salad" />
+          <span class="dish__price">5€</span>
+        </div>
+        <form class="order__form">
+          <label class="checkbox__label">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="choise"
+              value="agree"
+              data-dish-is-checked6
+            />
+            <span class="checkbox__custom">
+              <svg class="checkbox__custom-icon" width="50" height="50">
+                <use href="./images/icon.svg#check-mark"></use>
+              </svg>
+            </span>
+          </label>
+          <span class="quantity__field" data-quantity6>
+            <input
+              class="quantity"
+              type="number"
+              name="quantity"
+              id="quantity"
+              required
+              placeholder=""
+            />
+          </span>
+        </form>
+      </li>
+      <li class="menu__item">
+        <p class="dish__name">Pasta</p>
+        <div class="dish__wrapper">
+          <img src="./images/modal/pasta-tabl-268@1x.png" alt="Salad" />
+          <span class="dish__price">5€</span>
+        </div>
+        <form class="order__form">
+          <label class="checkbox__label">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="choise"
+              value="agree"
+              data-dish-is-checked7
+            />
+            <span class="checkbox__custom">
+              <svg class="checkbox__custom-icon" width="50" height="50">
+                <use href="./images/icon.svg#check-mark"></use>
+              </svg>
+            </span>
+          </label>
+          <span class="quantity__field" data-quantity7>
+            <input
+              class="quantity"
+              type="number"
+              name="quantity"
+              id="quantity"
+              required
+              placeholder=""
+            />
+          </span>
+        </form>
+      </li>
+      <li class="menu__item">
+        <p class="dish__name">Pizza</p>
+        <div class="dish__wrapper">
+          <img src="./images/modal/pizza-tabl-268@1x.png" alt="Salad" />
+          <span class="dish__price">7€</span>
+        </div>
+        <form class="order__form">
+          <label class="checkbox__label">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="choise"
+              value="agree"
+              data-dish-is-checked8
+            />
+            <span class="checkbox__custom">
+              <svg class="checkbox__custom-icon" width="50" height="50">
+                <use href="./images/icon.svg#check-mark"></use>
+              </svg>
+            </span>
+          </label>
+          <span class="quantity__field" data-quantity8>
+            <input
+              class="quantity"
+              type="number"
+              name="quantity"
+              id="quantity"
+              required
+              placeholder=""
+            />
+          </span>
+        </form>
+      </li>
+    </ul>
+    <button class="order__submit-btn" type="submit">Submit you order</button>
+  </div>
+</div>

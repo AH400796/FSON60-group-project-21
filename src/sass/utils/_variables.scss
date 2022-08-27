@@ -11,11 +11,15 @@ $color-primary-text: #2c2c2c;
 $color-input-label: #505050;
 $color-background: #fefefe;
 $color-input-background: #ffffff;
+$color-dish-background: #f7f7f7;
 $color-accent: #bbf330;
 $color-button-active: #b5ff00;
 $color-border-btn: #7eb101;
 $color-border-btn-active: #597d00;
 $color-main-theme: #ffe550;
+$color-modal-overlay: #8f8e8933;
+$color-border-price: #bda881;
+$color-price: #7a0606;
 $color-warning: #ff705d;
 
 //     Shadows
@@ -23,6 +27,6 @@ $shadow-header: 0px 4px 24px rgba(105, 105, 105, 0.1);
 $shadow-footer: 0px -4px 24px rgba(105, 105, 105, 0.1);
 $shadow-slider-arrow-click: 0px 4px 4px rgba(0, 0, 0, 0.16);
 $shadow-slider-arrow-defaul-or-hover: 0px 4px 4px rgba(0, 0, 0, 0.06);
-
+$shadow-modal: 5px 5px 15px rgba(0, 0, 0, 0.5);
 //     Transition properties
 $timing-function-trans-duration: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
