@@ -83,4 +83,9 @@
   &:focus {
     border: $color-border-btn-active 2px solid;
   }
+
+  @media screen and (min-width:$desktop) {
+    padding: 10px 22px;
+  }
+
 }
