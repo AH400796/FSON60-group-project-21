@@ -94,6 +94,47 @@
   }
 }
 
+.modal__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+
+  color: $color-primary-text;
+  background-color: transparent;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__btn-icon {
+  fill: currentColor;
+}
+
+.order__submit-btn {
+  @extend %button;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  max-width: 300px;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: calc(24 / 18);
+
+  background: $color-accent;
+  border: 1px solid $color-border-btn;
+  }
+ 
 .offerings__under__btn {
   @extend %button;
 
@@ -103,7 +144,7 @@
 
   &:hover,
   &:focus {
-    border: $color-border-btn-active 2px solid;
+    border: 2px solid $color-border-btn-active;
   }
 
   @media screen and (min-width:$desktop) {
@@ -111,3 +152,4 @@
   }
 
 }
+
