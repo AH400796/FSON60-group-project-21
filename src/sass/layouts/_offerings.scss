@@ -1,227 +1,217 @@
+.offerings {
+  @media screen and (min-width: $tablet) {
+    margin-top: -108px;
+  }
 
+  @media screen and (min-width: $desktop) {
+    margin-top: -161px;
+  }
+}
 
 .offerings__container {
-        background-image: url(../images/offerings/offeringsBg-mob.svg);
-            background-position: center;
-            background-repeat: no-repeat;
-        
-            background-size: cover;
-            padding-top: 40px;
-        
-            @media screen and (min-width:$tablet) {
-                background-image: url(../images/offerings/offeringsBg-tabl.svg);
-                padding-top: 100px;
-            }
+  background-image: url(../images/offerings/offeringsBg-mob.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 41px;
+  padding-bottom: 60px;
 
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/offerings/offeringsBg-tabl.svg);
 
-         @media screen and (min-width:$desktop){
-            background-image: url(../images/offerings/offeringsBg-desk.svg);
-            display: flex;
-         }
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
 
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/offerings/offeringsBg-desk.svg);
+    display: flex;
+    padding-top: 177px;
+    padding-bottom: 43px;
+  }
 }
 
 .offerings__decor-container {
-    
-    @media screen and (min-width:$desktop) {
-        
-        display: flex;
-        flex-direction: column;
-        width: 573px;
-        height: 392px;
-        margin-top: 100px;
-        margin-left: 90px;
-    }
-
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    width: 573px;
+    padding-top: 83px;
+  }
 }
 
 .offerings__decor-img {
-    height: 310px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 60px;
-    background-size: 280px 310px;
-    
+  height: 309px;
+  background-repeat: no-repeat;
+  background-position: center;
 
-    background-image: url(../images/offerings/appleBg-mob-280@1x.png);
-    
-    @media (min-device-pixel-ratio: 2),
+  background-size: 280px 309px;
+
+  @media screen and (max-width: ($desktop - 0.02px)) {
+    margin-bottom: 60px;
+  }
+
+  background-image: url(../images/offerings/appleBg-mob-280@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        .offerings__decor-img {
-            background-image: url(../images/offerings/appleBg-mob-560@2x.png);
-        }
+    background-image: url(../images/offerings/appleBg-mob-560@2x.png);
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-size: 704px 394px;
+    height: 394px;
+
+    background-image: url(../images/offerings/appleBg-tabl-704@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/appleBg-tabl-1408@2x.png);
     }
+  }
 
+  @media screen and (min-width: $desktop) {
+    background-size: 550px 604px;
+    height: 604px;
+    width: 550px;
+    margin-right: 90px;
 
-    @media screen and (min-width:$tablet ){
-        background-size: 704px 394px;
-        height: 394px;
-        background-image: url(../images/offerings/appleBg-tabl-704@1x.png);
+    background-image: url(../images/offerings/appleBg-desk-550@1x.png);
 
-        @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                .offerings__decor-img {
-                    background-image: url(../images/offerings/appleBg-tabl-1408@2x.png);
-                }
-            }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/offerings/appleBg-desk-1100@2x.png);
     }
-
-
-        @media screen and (min-width:$desktop ) {
-            background-size: 550px 604px;
-            height: 604px;
-            width: 550px;
-            background-image: url(../images/offerings/appleBg-desk-550@1x.png);
-    
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                .offerings__decor-img {
-                    background-image: url(../images/offerings/appleBg-desk-1100@2x.png);
-                }
-            }
-        }
-
-
-
-
-
+  }
 }
 
 .offerings__about {
-   
-   @media screen  and (min-width:$tablet){
-    
-       margin-right: 210px;
-       margin-bottom: 40px;
-   }
+  @media screen and (min-width: $tablet) {
+    margin-right: 210px;
+    margin-bottom: 40px;
+  }
 
-   @media screen and (min-width:$desktop) {
+  @media screen and (min-width: $desktop) {
     margin-right: 0px;
     margin-bottom: 0px;
-   }
+  }
 }
 
-
 .offerings__about__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.166;
+
+  margin-bottom: 28px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+    font-size: 42px;
+  }
+
+  @media screen and (min-width: $desktop) {
     font-weight: 700;
-    font-size: 28px;
-    line-height: 1.17;
-    
-    margin-bottom: 28px;
-
-
-
-    @media screen and (min-width:$desktop) {
-           font-weight: 700;
-            font-size: 42px;
-            line-height: 120%;
-
-            margin-bottom: 20px;
-    }
+    line-height: 1.2;
+  }
 }
 
 .offerings__about__text {
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+
+  @media screen and (min-width: $desktop) {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
 
-    margin-bottom: 28px;
-
-
-    @media screen and (min-width:$desktop) {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 150%;
-            margin-bottom: 40px;
-
-            width: 500px;
-    }
+    width: 500px;
+  }
 }
 
+.offerings__benefits {
+  margin-bottom: 28px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
+  }
+}
 
 .offerings__benefits__list {
-@extend %list;
+  @extend %list;
 
-
-@media screen and (min-width:$tablet){
-    
+  @media screen and (min-width: $tablet) {
     display: flex;
-}
+    gap: 116px;
+  }
 
+  @media screen and (min-width: $desktop) {
+    gap: 67px;
+  }
 }
 
 .offerings__benefits__item {
+  @media screen and (max-width: ($tablet - 0.02px)) {
     margin-bottom: 28px;
-
-@media screen and (min-width:$tablet) {
-        margin-bottom: 40px;
-        width: 252px;
-
-        &:first-child {
-            margin-right: 116px;
-        }
-    }
-
-@media screen and (min-width:$desktop){
-    &:first-child {
-        margin-right: 67px;
-    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: 252px;
+  }
 }
-
-}
-
 
 .offerings__benefits__icon {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
-
 .offerings__benefits__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.16;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
 
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .offerings__benefits__text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.14;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(16 / 14);
 }
-
 
 .offerings__under {
-    padding-bottom: 60px ;
-    display: flex;
-
-    @media screen and (min-width:$tablet) {
-
-        padding-bottom: 100px;
-    }
+  display: flex;
 }
 
-
 .offerings__under__link {
-    @extend %link ;
+  @extend %link;
 
-    display: flex;
-    align-self: center;
-    margin-left: 20px ;
+  display: flex;
+  align-self: center;
+  margin-left: 20px;
 
-    @media screen and (min-width:$desktop){
-        display: none;
-    }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .offerings__under__icon {
-       align-self: center;
-       margin-left: 3px;
+  align-self: center;
+  margin-left: 3px;
 
-        @media screen and (min-width:$desktop) {
-        display: none;
-        }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
