@@ -5,13 +5,16 @@
   background-position: center;
   background-size: cover;
 
+  // mobile screen
   background-image: url('../images/customers/customersBg-mob.svg');
 
+  // tablet screen
   @media screen and (min-width: $tablet) {
     padding-bottom: 115px;
     background-image: url('../images/customers/customersBg-tabl.svg');
   }
 
+  // desctop screen
   @media screen and (min-width: $desktop) {
     padding-top: 100px;
     padding-bottom: 213px;

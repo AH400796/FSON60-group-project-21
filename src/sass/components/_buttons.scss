@@ -16,9 +16,7 @@
 .subscription__btn {
   @extend %button;
 
-  display: block;
-
-  padding-top: 10px;
+  padding-top: 11px;
   padding-right: 22px;
   padding-bottom: 11px;
   padding-left: 22px;
@@ -30,6 +28,30 @@
 
   @media screen and (max-width: ($tablet - 0.02px)) {
     margin-left: auto;
+  }
+}
+
+.footer-subscription__btn {
+  @extend %button;
+
+  padding-top: 10px;
+  padding-right: 22px;
+  padding-bottom: 10px;
+  padding-left: 22px;
+
+  font-size: 13px;
+  line-height: calc(20 / 13);
+
+  background: $color-input-background;
+  border: 1px solid $color-border-btn;
+
+  @media screen and (max-width: ($tablet - 0.02px)) {
+    margin-left: auto;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-main-theme;
   }
 }
 
