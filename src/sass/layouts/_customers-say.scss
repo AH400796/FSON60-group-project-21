@@ -1,6 +1,6 @@
 .customers__container {
   padding-top: 60px;
-  padding-bottom: 62px;
+  padding-bottom: 60px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -10,14 +10,14 @@
 
   // tablet screen
   @media screen and (min-width: $tablet) {
-    padding-bottom: 115px;
+    padding-bottom: 120px;
     background-image: url('../images/customers/customersBg-tabl.svg');
   }
 
   // desctop screen
   @media screen and (min-width: $desktop) {
     padding-top: 100px;
-    padding-bottom: 213px;
+    padding-bottom: 200px;
     padding-right: 123px;
     background-image: url('../images/customers/customersBg-desk.svg');
   }
@@ -50,14 +50,8 @@
   }
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 48px;
-
     font-size: 16px;
     line-height: 1.19;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 26px;
   }
 }
 
