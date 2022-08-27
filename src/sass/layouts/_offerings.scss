@@ -80,7 +80,7 @@
 @extend %list;
 
 
-@media screen and (min-width){
+@media screen and (min-width:$tablet){
     
     display: flex;
 }
@@ -90,7 +90,7 @@
 .offerings__benefits__item {
     margin-bottom: 28px;
 
-@media screen and (min-width) {
+@media screen and (min-width:$tablet) {
         margin-bottom: 40px;
         margin-right: 116px;
         width: 252px;
