@@ -208,7 +208,6 @@
 .offerings__under__link {
     @extend %link ;
 
-    color: #0000;
     display: flex;
     align-self: center;
     margin-left: 20px ;
@@ -219,9 +218,8 @@
 }
 
 .offerings__under__icon {
-    align-self: center;
-    margin-left: 5px;
- color: #0000;
+       align-self: center;
+       margin-left: 3px;
 
         @media screen and (min-width:$desktop) {
         display: none;
