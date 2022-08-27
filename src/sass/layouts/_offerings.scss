@@ -13,6 +13,10 @@
 
 .offerings__container {
     padding-top: 40px;
+
+    @media screen and (min-width:$tablet) {
+        padding-top: 100px;
+    }
 }
 
 
