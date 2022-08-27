@@ -36,6 +36,8 @@
 
 
     @media screen and (min-width:$tablet ){
+        background-size: 704px 394px;
+        height: 394px;
         background-image: url(../images/offerings/appleBg-tabl-704@1x.png);
 
         @media (min-device-pixel-ratio: 2),
