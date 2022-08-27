@@ -133,9 +133,23 @@
 
   background: $color-accent;
   border: 1px solid $color-border-btn;
+  }
+ 
+.offerings__under__btn {
+  @extend %button;
+
+  padding: 10px 34px 10px 31px;
+  background-color: $color-input-background;
+  border: $color-border-btn 2px solid;
 
   &:hover,
   &:focus {
-    background-color: $color-button-active;
+    border: 2px solid $color-border-btn-active;
   }
+
+  @media screen and (min-width:$desktop) {
+    padding: 10px 22px;
+  }
+
 }
+
