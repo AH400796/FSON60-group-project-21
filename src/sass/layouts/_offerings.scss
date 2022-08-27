@@ -218,9 +218,8 @@
 }
 
 .offerings__under__icon {
-    //    align-self: center;
-    //    margin-left: 3px;
-       margin: auto;
+       align-self: center;
+       margin-left: 3px;
 
         @media screen and (min-width:$desktop) {
         display: none;
