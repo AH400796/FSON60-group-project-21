@@ -16,10 +16,22 @@
     @media screen and (min-width:$tablet) {
         padding-top: 100px;
     }
+
+
+         @media screen and (min-width:$desktop){
+
+            display: flex;
+         }
+
 }
 
 .offerings__decor-container {
-    display: flex;
+    
+    @media screen and (min-width:$desktop) {
+        
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
@@ -165,4 +177,8 @@
     @extend %link ;
 
     margin-left: 20px ;
+
+    @media screen and (min-width:$desktop){
+        display: none;
+    }
 }
