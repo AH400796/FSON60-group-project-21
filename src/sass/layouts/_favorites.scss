@@ -70,11 +70,16 @@
   border-radius: 140px;
 
   flex-basis: calc((100% - 0 * 32px) / 1);
+
   transition: border $timing-function-trans-duration;
 
   &:hover,
   &:focus {
     border: 11px solid $color-accent;
+  }
+
+  @media screen and (max-width: ($tablet - 0.02px)) {
+    max-width: 280px;
   }
 
   @media screen and (min-width: $tablet) {
