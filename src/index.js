@@ -52,6 +52,7 @@ const swiper = new Swiper('.swiper', {
   refs.openModal2Btn.addEventListener('click', toggleModal3);
 
   function toggleModal() {
+    document.body.classList.toggle('modal-open');
     refs.modal.classList.toggle('is-hidden');
     refs.modal2.classList.toggle('is-close');
     refs.modal3.classList.toggle('is-open');
