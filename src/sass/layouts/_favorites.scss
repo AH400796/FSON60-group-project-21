@@ -78,6 +78,12 @@
     border: 11px solid $color-accent;
   }
 
+  @media screen and (max-width: 767px) {
+  &:nth-child(n + 4) {
+  display: none;
+    }
+  }
+
   @media screen and (max-width: ($tablet - 0.02px)) {
     max-width: 280px;
   }
