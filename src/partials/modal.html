@@ -1,6 +1,7 @@
 <!--Modal -->
 <div class="backdrop is-hidden" data-modal>
-  <div class="backdrop__modal">
+  <!-- MODAL-1 -->
+  <div class="backdrop__modal" data-modal2>
     <button class="modal__close-btn" type="button" data-modal-close>
       <svg class="modal__btn-icon" width="50" height="50">
         <use href="./images/icon.svg#modal-close"></use>
@@ -327,6 +328,68 @@
         </form>
       </li>
     </ul>
-    <button class="order__submit-btn" type="submit">Submit you order</button>
+    <button class="order__submit-btn" type="submit" data-modal2-open>Submit you order</button>
+  </div>
+  <!-- MODAL-2 -->
+  <div class="backdrop__modal2" data-modal-appear>
+    <button class="modal__close-btn" type="button" data-modal-close2>
+      <svg class="modal__btn-icon" width="50" height="50">
+        <use href="./images/icon.svg#modal-close"></use>
+      </svg>
+    </button>    
+    <ul class="payment">
+      <li class="payment__item">
+        <p class="payment__title">Choose payment method:</p>
+        <form class="payment__form">
+          <label class="radio__label"> 
+            
+            <span class="radio_wrapper">
+              <input class="radio visually-hidden"  type="radio"  name="credit-card" value="credit card"
+              data-payment />
+              <span class="radio__custom">
+                <svg class="radio__custom-icon" width="50" height="50">
+                  <use href="./images/icon.svg#check-mark"></use>
+                </svg>
+              </span>  
+              <span class="payment__method">Card</span>          
+              
+            </span>
+            <span>
+                <img class="card" src="./images/modal/visa.png" width="200" alt="visa card"></img>
+                <img class="card" src="./images/modal/mc.png" width="200" alt="master card"></img>
+              </span>
+          </label>
+          <label class="radio__label">
+            
+            <span class="radio_wrapper">
+              <input class="radio visually-hidden"  type="radio"  name="credit-card" value="credit card"
+              data-payment />
+              <span class="radio__custom">
+                <svg class="radio__custom-icon" width="50" height="50">
+                  <use href="./images/icon.svg#check-mark"></use>
+                </svg>
+              </span>
+              <span class="payment__method">Cash</span>            
+              
+            </span>
+            <span>
+                <img class="card" src="./images/modal/cash.png" width="200" alt="visa card"></img>
+                
+              </span>
+          </label>
+        </form>
+      </li>
+      <li class="delivery__item">
+        <p class="delivery__title">Enter the delivery address:</p>
+        <form class="delivery__form">
+          <input class="delivery__input" type="text" name="delivery" id="delivery__text" placeholder="address"/>
+          <label class="delivery__label" for="delivery__text">Your
+            addres</label>
+        </form>
+      </li>
+    </ul>
+    <button class="payment__submit-btn" type="submit">
+      Submit you payment
+    </button>
   </div>
 </div>
