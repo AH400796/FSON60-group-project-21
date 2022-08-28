@@ -16,6 +16,21 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+// ANIMATION
+(() => {
+  const refs = {
+    logo: document.querySelector('[data-logo]'),
+    discount: document.querySelector('[data-discount]'),
+  };
+
+  refs.logo.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.logo.classList.toggle('animated');
+    refs.discount.classList.toggle('animated');
+  }
+})();
+
 // MODAL
 (() => {
   const refs = {

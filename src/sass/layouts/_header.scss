@@ -9,14 +9,19 @@
 }
 
 .header__container {
+  position: relative;
   display: flex;
   align-items: center;
+  overflow: hidden;
 
   box-shadow: $shadow-header;
 }
 
 .header__link {
   @extend %link;
+
+  position: relative;
+  z-index: 10;
   padding-top: 10px;
   padding-bottom: 10px;
 }
