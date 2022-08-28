@@ -150,6 +150,10 @@
   &:focus {
     background-color: $color-border-btn;
   }
+
+  &:disabled {
+    background-color: $color-modal-disabled;
+  }
 }
 
 .offerings__under__btn {

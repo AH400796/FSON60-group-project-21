@@ -40,6 +40,9 @@ const swiper = new Swiper('.swiper', {
 // MODAL-2
 (() => {
   const refs = {
+    radioBtn1: document.querySelector('[data-payment1]'),
+    radioBtn2: document.querySelector('[data-payment2]'),
+    disabledButton: document.querySelector('[data-disabled-button]'),
     openModal2Btn: document.querySelector('[data-modal2-open]'),
     closeModal2Btn: document.querySelector('[data-modal-close2]'),
     modal: document.querySelector('[data-modal]'),
@@ -50,6 +53,8 @@ const swiper = new Swiper('.swiper', {
   refs.closeModal2Btn.addEventListener('click', toggleModal);
   refs.openModal2Btn.addEventListener('click', toggleModal2);
   refs.openModal2Btn.addEventListener('click', toggleModal3);
+  refs.radioBtn1.addEventListener('click', toggleModal4);
+  refs.radioBtn2.addEventListener('click', toggleModal4);
 
   function toggleModal() {
     document.body.classList.toggle('modal-open');
@@ -62,6 +67,9 @@ const swiper = new Swiper('.swiper', {
   }
   function toggleModal3() {
     refs.modal3.classList.toggle('is-open');
+  }
+  function toggleModal4() {
+    refs.disabledButton.removeAttribute('disabled');
   }
 })();
 
@@ -78,6 +86,7 @@ const swiper = new Swiper('.swiper', {
     dishChoise6: document.querySelector('[data-dish-is-checked6]'),
     dishChoise7: document.querySelector('[data-dish-is-checked7]'),
     dishChoise8: document.querySelector('[data-dish-is-checked8]'),
+
     quantity: document.querySelector('[data-quantity]'),
     quantity1: document.querySelector('[data-quantity1]'),
     quantity2: document.querySelector('[data-quantity2]'),
@@ -87,6 +96,7 @@ const swiper = new Swiper('.swiper', {
     quantity6: document.querySelector('[data-quantity6]'),
     quantity7: document.querySelector('[data-quantity7]'),
     quantity8: document.querySelector('[data-quantity8]'),
+
     checkedDish: document.querySelector('[data-checked-dish]'),
     checkedDish1: document.querySelector('[data-checked-dish1]'),
     checkedDish2: document.querySelector('[data-checked-dish2]'),
@@ -96,6 +106,8 @@ const swiper = new Swiper('.swiper', {
     checkedDish6: document.querySelector('[data-checked-dish6]'),
     checkedDish7: document.querySelector('[data-checked-dish7]'),
     checkedDish8: document.querySelector('[data-checked-dish8]'),
+
+    disabledButton: document.querySelector('[data-modal2-open]'),
   };
 
   refs.dishChoise.addEventListener('click', toggleModal);
@@ -109,38 +121,47 @@ const swiper = new Swiper('.swiper', {
   refs.dishChoise8.addEventListener('click', toggleModal8);
 
   function toggleModal() {
+    refs.disabledButton.removeAttribute('disabled');
     refs.quantity.classList.toggle('available');
     refs.checkedDish.classList.toggle('checked');
   }
   function toggleModal1() {
+    refs.disabledButton.removeAttribute('disabled');
     refs.quantity1.classList.toggle('available');
     refs.checkedDish1.classList.toggle('checked');
   }
   function toggleModal2() {
+    refs.disabledButton.removeAttribute('disabled');
     refs.quantity2.classList.toggle('available');
     refs.checkedDish2.classList.toggle('checked');
   }
   function toggleModal3() {
+    refs.disabledButton.removeAttribute('disabled');
     refs.quantity3.classList.toggle('available');
     refs.checkedDish3.classList.toggle('checked');
   }
   function toggleModal4() {
+    refs.disabledButton.removeAttribute('disabled');
     refs.quantity4.classList.toggle('available');
     refs.checkedDish4.classList.toggle('checked');
   }
   function toggleModal5() {
+    refs.disabledButton.removeAttribute('disabled');
     refs.quantity5.classList.toggle('available');
     refs.checkedDish5.classList.toggle('checked');
   }
   function toggleModal6() {
+    refs.disabledButton.removeAttribute('disabled');
     refs.quantity6.classList.toggle('available');
     refs.checkedDish6.classList.toggle('checked');
   }
   function toggleModal7() {
+    refs.disabledButton.removeAttribute('disabled');
     refs.quantity7.classList.toggle('available');
     refs.checkedDish7.classList.toggle('checked');
   }
   function toggleModal8() {
+    refs.disabledButton.removeAttribute('disabled');
     refs.quantity8.classList.toggle('available');
     refs.checkedDish8.classList.toggle('checked');
   }

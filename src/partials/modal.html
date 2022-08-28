@@ -328,7 +328,7 @@
         </form>
       </li>
     </ul>
-    <button class="order__submit-btn" type="submit" data-modal2-open>Submit you order</button>
+    <button class="order__submit-btn" type="submit" disabled data-modal2-open>Submit you order</button>
   </div>
   <!-- MODAL-2 -->
   <div class="backdrop__modal2" data-modal-appear>
@@ -345,14 +345,13 @@
             
             <span class="radio_wrapper">
               <input class="radio visually-hidden"  type="radio"  name="credit-card" value="credit card"
-              data-payment />
+              data-payment1 />
               <span class="radio__custom">
                 <svg class="radio__custom-icon" width="50" height="50">
                   <use href="./images/icon.svg#check-mark"></use>
                 </svg>
               </span>  
-              <span class="payment__method">Card</span>          
-              
+              <span class="payment__method">Card</span>
             </span>
             <span>
                 <img class="card" src="./images/modal/visa.png" width="200" alt="visa card"></img>
@@ -360,10 +359,9 @@
               </span>
           </label>
           <label class="radio__label">
-            
             <span class="radio_wrapper">
               <input class="radio visually-hidden"  type="radio"  name="credit-card" value="credit card"
-              data-payment />
+              data-payment2 />
               <span class="radio__custom">
                 <svg class="radio__custom-icon" width="50" height="50">
                   <use href="./images/icon.svg#check-mark"></use>
@@ -388,7 +386,7 @@
         </form>
       </li>
     </ul>
-    <button class="payment__submit-btn" type="submit">
+    <button class="payment__submit-btn" type="submit"  disabled data-disabled-button>
       Submit you payment
     </button>
   </div>
