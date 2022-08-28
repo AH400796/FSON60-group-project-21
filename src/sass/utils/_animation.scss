@@ -1,7 +1,7 @@
 .header__link.animated {
   animation-name: logo;
   animation-duration: 3000ms;
-  animation-timing-function: cubic-bezier(0.71, 1.33, 1, 1);
+  animation-timing-function: $timing-function-animation;
 
   animation-iteration-count: 1;
 }
@@ -40,7 +40,7 @@
   &.animated {
     animation-name: discount;
     animation-duration: 4000ms;
-    animation-timing-function: cubic-bezier(0.71, 1.33, 1, 1);
+    animation-timing-function: $timing-function-animation;
     animation-iteration-count: 1;
     animation-delay: 2500ms;
   }
