@@ -1,3 +1,4 @@
+// SWIPER
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
@@ -15,6 +16,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+// MODAL
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open]'),
@@ -34,6 +36,8 @@ const swiper = new Swiper('.swiper', {
     refs.modal.classList.toggle('is-hidden');
   }
 })();
+
+// CHECK DISH
 
 (() => {
   const refs = {

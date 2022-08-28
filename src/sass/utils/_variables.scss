@@ -18,7 +18,7 @@ $color-border-btn: #7eb101;
 $color-border-btn-active: #597d00;
 $color-main-theme: #ffe550;
 $color-modal-overlay: #8f8e8933;
-$color-border-price: #bda881;
+
 $color-price: #7a0606;
 $color-warning: #ff705d;
 
@@ -30,3 +30,4 @@ $shadow-slider-arrow-defaul-or-hover: 0px 4px 4px rgba(0, 0, 0, 0.06);
 $shadow-modal: 5px 5px 15px rgba(0, 0, 0, 0.5);
 //     Transition properties
 $timing-function-trans-duration: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+$timing-function-trans-duration-for-modal: cubic-bezier(0.4, 0, 0.2, 1) 750ms;

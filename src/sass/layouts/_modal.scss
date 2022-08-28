@@ -7,6 +7,8 @@
   height: 100%;
   overflow-y: scroll;
 
+  transition: opacity $timing-function-trans-duration;
+
   background-color: $color-modal-overlay;
   backdrop-filter: blur(5px);
 }
@@ -17,7 +19,7 @@
   pointer-events: none;
 
   & .backdrop__modal {
-    transform: translate(-250%, -150%) scale(0.1);
+    transform: translate(-50%, 100%) scale(0.3);
   }
 }
 
@@ -34,7 +36,8 @@
   padding-left: 40px;
   text-align: center;
 
-  transform: translateX(-50%) scale(1);
+  transform: translate(-50%, 0%) scale(1);
+  transition: transform $timing-function-trans-duration-for-modal;
 
   background-image: url('../images/modal/modal-bg.svg');
   background-repeat: repeat;
@@ -63,6 +66,16 @@
   margin-bottom: 50px;
 }
 
+.order__form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 25px;
+
+  border-bottom: 3px solid $color-input-label;
+  border-radius: 10%;
+}
+
 .dish__name {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -78,19 +91,6 @@
   background-position: center;
 }
 
-.menu {
-  @extend %list;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px;
-  margin-bottom: 100px;
-}
-
-.menu__item {
-  width: 300px;
-}
-
 .dish__wrapper {
   position: relative;
   display: flex;
@@ -100,6 +100,8 @@
   border: 3px solid $color-input-label;
   border-radius: 20%;
   text-align: center;
+
+  transition: background-color $timing-function-trans-duration;
 
   &.checked {
     background-color: $color-accent;
@@ -130,14 +132,17 @@
   background-position: center;
 }
 
-.order__form {
+.menu {
+  @extend %list;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
-  padding: 25px;
+  gap: 60px;
+  margin-bottom: 100px;
+}
 
-  border-bottom: 3px solid $color-input-label;
-  border-radius: 10%;
+.menu__item {
+  width: 300px;
 }
 
 .checkbox {
@@ -156,6 +161,10 @@
   background-color: $color-background;
   border: 3px solid $color-input-label;
   border-radius: 30px;
+
+  transition: color $timing-function-trans-duration,
+    background-color $timing-function-trans-duration,
+    border-color $timing-function-trans-duration;
 }
 
 .checkbox__custom-icon {

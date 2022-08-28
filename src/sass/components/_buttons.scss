@@ -3,6 +3,8 @@
 
   display: none;
 
+  transition: background-color $timing-function-trans-duration;
+
   @media screen and (min-width: $tablet) {
     display: block;
 
@@ -20,6 +22,8 @@
   padding-right: 22px;
   padding-bottom: 11px;
   padding-left: 22px;
+
+  transition: background-color $timing-function-trans-duration;
 
   &:hover,
   &:focus {
@@ -45,6 +49,8 @@
   background: $color-input-background;
   border: 1px solid $color-border-btn;
 
+  transition: background-color $timing-function-trans-duration;
+
   @media screen and (max-width: ($tablet - 0.02px)) {
     margin-left: auto;
   }
@@ -59,6 +65,8 @@
   @extend %button;
 
   display: block;
+
+  transition: background-color $timing-function-trans-duration;
 
   &:hover,
   &:focus {
@@ -136,9 +144,11 @@
   background: $color-accent;
   border: 1px solid $color-border-btn-active;
 
+  transition: background-color $timing-function-trans-duration;
+
   &:hover,
   &:focus {
-    background: $color-border-btn;
+    background-color: $color-border-btn;
   }
 }
 
@@ -156,6 +166,8 @@
 
   background-color: $color-input-background;
   border: $color-border-btn 2px solid;
+
+  transition: background-color $timing-function-trans-duration;
 
   &:hover,
   &:focus {
