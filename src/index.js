@@ -117,3 +117,10 @@ const swiper = new Swiper('.swiper', {
     refs.checkedDish8.classList.toggle('checked');
   }
 })();
+
+// header-fixed
+const { height: headerHeight } = document
+  .querySelector('.header')
+  .getBoundingClientRect();
+
+document.body.style.paddingTop = `${headerHeight}px`;
