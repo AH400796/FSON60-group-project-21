@@ -8,14 +8,14 @@
   display: none;
   gap: 28px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
   }
 }
 
 .nav__link {
   @extend %link;
-  padding: 22px 0;
+  padding: 27px 0;
 
   font-weight: 400;
   font-size: 14px;
@@ -25,6 +25,7 @@
 
   &:hover,
   &:focus {
+    font-weight: 700;
     color: $color-accent;
     text-decoration: underline;
   }

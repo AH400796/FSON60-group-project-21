@@ -166,3 +166,19 @@
     padding: 10px 22px;
   }
 }
+
+.dropdown__btn {
+  margin-left: auto;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  justify-content: center;
+
+  border: none;
+  background-color: transparent;
+  fill: $color-border-btn;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

@@ -36,7 +36,10 @@
 
   transform: translateX(-50%) scale(1);
 
-  background: $color-main-theme;
+  background-image: url('../images/modal/modal-bg.svg');
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
   border: 1px solid $color-border-btn-active;
   border-radius: 30px;
   box-shadow: $shadow-modal;
@@ -61,8 +64,8 @@
 }
 
 .dish__name {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-style: italic;
   font-size: 28px;
   font-weight: 900;
@@ -70,8 +73,9 @@
   margin-bottom: 10px;
 
   background-image: url('../images/modal/bg.svg');
-  background-repeat: no-repeat;
-  background-position: 30px 10px;
+  background-repeat: repeat-y;
+  background-size: contain;
+  background-position: center;
 }
 
 .menu {
@@ -100,8 +104,8 @@
 
 .dish__price {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: -15px;
+  bottom: -15px;
   display: flex;
   justify-content: center;
   align-items: center;
