@@ -167,7 +167,7 @@
   background-color: $color-input-background;
   border: $color-border-btn 2px solid;
 
-  transition: background-color $timing-function-trans-duration;
+  transition: border $timing-function-trans-duration;
 
   &:hover,
   &:focus {
