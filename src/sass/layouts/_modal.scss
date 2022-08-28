@@ -114,17 +114,20 @@
   justify-content: center;
   align-items: center;
 
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
+  padding-top: 20px;
+
   font-style: italic;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 1.5;
 
   color: $color-price;
-  background-color: $color-main-theme;
-  border-radius: 50%;
-  border: 2px solid $color-border-price;
+  background-image: url('../images/modal/bg-price.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .order__form {
