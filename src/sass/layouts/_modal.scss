@@ -72,14 +72,8 @@
 }
 
 .order__form {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
   padding-left: 25px;
   padding-right: 25px;
-
-  border-bottom: 3px solid $color-input-label;
-  border-radius: 10%;
 }
 
 .dish__name {
@@ -148,11 +142,22 @@
 }
 
 .menu__item {
+  padding-bottom: 25px;
   width: 300px;
+
+  border-bottom: 3px solid $color-input-label;
+  border-radius: 10%;
 }
 
 .checkbox__label {
+  position: relative;
   cursor: pointer;
+}
+
+.checkbox__wrapper {
+  position: absolute;
+  top: 0;
+  right: -20px;
 }
 
 .checkbox__custom {
@@ -186,27 +191,18 @@
   fill: currentColor;
 }
 
-.checkbox__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
 .quantity__field {
-  position: relative;
-  display: none;
+  opacity: 0;
 
   &.available {
-    display: block;
+    opacity: 1;
   }
 }
 
 .quantity {
   width: 100px;
   height: 50px;
+  margin-top: 25px;
   padding-top: 12px;
   padding-left: 10px;
   padding-bottom: 12px;
