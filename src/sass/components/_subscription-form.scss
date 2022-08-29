@@ -30,6 +30,8 @@
 
   color: $color-input-label;
 
+  pointer-events: none;
+
   .subscription__input:not(:placeholder-shown) + & {
     opacity: 0;
   }
