@@ -168,7 +168,9 @@
   border: 3px solid $color-input-label;
   border-radius: 30px;
 
-  transition: color $timing-function-trans-duration, background-color $timing-function-trans-duration, border-color $timing-function-trans-duration;
+  transition: color $timing-function-trans-duration,
+    background-color $timing-function-trans-duration,
+    border-color $timing-function-trans-duration;
 
   .checkbox:checked + & {
     background-color: $color-accent;
@@ -359,7 +361,9 @@
   border: 3px solid $color-input-label;
   border-radius: 30px;
 
-  transition: color $timing-function-trans-duration, background-color $timing-function-trans-duration, border-color $timing-function-trans-duration;
+  transition: color $timing-function-trans-duration,
+    background-color $timing-function-trans-duration,
+    border-color $timing-function-trans-duration;
 }
 
 .radio__custom-icon {
