@@ -30,12 +30,11 @@
 
 .discount {
   position: absolute;
-  left: -200px;
-  top: 25px;
+  left: -280px;
+  top: 5px;
   font-size: 16px;
   font-weight: 700;
   font-style: italic;
-  // transform: translateX(300px);
 
   &.animated {
     animation-name: discount;
