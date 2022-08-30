@@ -194,6 +194,8 @@
 .quantity__field {
   opacity: 0;
 
+  transition: opacity $timing-function-trans-duration;
+
   &.available {
     opacity: 1;
   }
@@ -219,6 +221,7 @@
   border-radius: 30px;
   outline: transparent;
 }
+
 // MODAL-2
 .backdrop__modal2 {
   display: flex;

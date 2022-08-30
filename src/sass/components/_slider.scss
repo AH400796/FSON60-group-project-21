@@ -1,12 +1,16 @@
 .hero__slider {
-  position: relative;
+  position: absolute;
   display: none;
   overflow: hidden;
 
-  @media screen and (max-width: ($desktop - 0.02px)) {
-    position: absolute;
+  @media screen and (min-width: $tablet) {
     right: 32px;
-    bottom: 0px;
+    bottom: -73px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    right: 16px;
+    bottom: -150px;
   }
 
   @media screen and (min-width: $tablet) {
