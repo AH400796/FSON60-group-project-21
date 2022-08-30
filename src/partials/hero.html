@@ -26,54 +26,63 @@
       </svg>
       <div class="slider__img-wrapper swiper">
         <div class="swiper-wrapper">
-          <img
-            class="swiper-slide"
-            srcset="
-              ./images/hero/slide1-desk-528@1x.png   528w,
-              ./images/hero/slide1-desk-1056@2x.png 1056w,
-              ./images/hero/slide1-tabl-292@1x.png   292w,
-              ./images/hero/slide1-tabl-584@2x.png   584w
-            "
-            sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px"
-            class="slider__img"
-            src="./images/hero/slide1-tabl-292@1x.png"
-            loading="lazy"
-            alt="Falafel"
-            width="528"
-            height="528"
-          />
-          <img
-            class="swiper-slide"
-            srcset="
-              ./images/hero/slide2-desk-528@1x.png   528w,
-              ./images/hero/slide2-desk-1056@2x.png 1056w,
-              ./images/hero/slide2-tabl-292@1x.png   292w,
-              ./images/hero/slide2-tabl-584@2x.png   584w
-            "
-            sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px"
-            class="slider__img"
-            src="./images/hero/slide1-tabl-292@1x.png"
-            loading="lazy"
-            alt="Greek salad"
-            width="528"
-            height="528"
-          />
-          <img
-            class="swiper-slide"
-            srcset="
-              ./images/hero/slide3-desk-528@1x.png   528w,
-              ./images/hero/slide3-desk-1056@2x.png 1056w,
-              ./images/hero/slide3-tabl-292@1x.png   292w,
-              ./images/hero/slide3-tabl-584@2x.png   584w
-            "
-            sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px"
-            class="slider__img"
-            src="./images/hero/slide1-tabl-292@1x.png"
-            loading="lazy"
-            alt="Poached Eggs"
-            width="528"
-            height="528"
-          />
+          <picture class="swiper-slide">
+            <source
+              srcset="
+                ./images/hero/slide1-desk-528@1x.webp   528w,
+                ./images/hero/slide1-desk-1056@2x.webp 1056w,
+                ./images/hero/slide1-tabl-292@1x.webp   292w,
+                ./images/hero/slide1-tabl-584@2x.webp   584w
+              "
+              sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px"
+              type="image/webp"
+            />
+            <img
+              src="./images/hero/slide1-tabl-292@1x.png"
+              alt="Falafel"
+              width="528"
+              height="528"
+            />
+            <img />
+          </picture>
+          <picture class="swiper-slide">
+            <source
+              srcset="
+                ./images/hero/slide2-desk-528@1x.webp   528w,
+                ./images/hero/slide2-desk-1056@2x.webp 1056w,
+                ./images/hero/slide2-tabl-292@1x.webp   292w,
+                ./images/hero/slide2-tabl-584@2x.webp   584w
+              "
+              sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px"
+              type="image/webp"
+            />
+            <img
+              src="./images/hero/slide2-tabl-292@1x.png"
+              alt="Greek salad"
+              width="528"
+              height="528"
+            />
+            <img />
+          </picture>
+          <picture class="swiper-slide">
+            <source
+              srcset="
+                ./images/hero/slide3-desk-528@1x.webp   528w,
+                ./images/hero/slide3-desk-1056@2x.webp 1056w,
+                ./images/hero/slide3-tabl-292@1x.webp   292w,
+                ./images/hero/slide3-tabl-584@2x.webp   584w
+              "
+              sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px"
+              type="image/webp"
+            />
+            <img
+              src="./images/hero/slide3-tabl-292@1x.png"
+              alt="Poached Eggs"
+              width="528"
+              height="528"
+            />
+            <img />
+          </picture>
         </div>
       </div>
     </div>
