@@ -5,3 +5,4 @@ import './js/animation';
 import './js/checkDish';
 import './js/fixed-header';
 import './js/phone-mask';
+import './js/transparentHeader';

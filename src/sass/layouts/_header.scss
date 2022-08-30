@@ -32,3 +32,9 @@
   width: 71px;
   height: 52px;
 }
+
+.header.transparency {
+  backdrop-filter: blur(10px);
+  background-color: $color-fixed-header;
+  box-shadow: $shadow-fixed-header;
+}
