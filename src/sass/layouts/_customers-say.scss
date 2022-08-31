@@ -1,12 +1,9 @@
 .customers {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
-
+  
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: 100%;
 
   // mobile screen
@@ -14,19 +11,23 @@
 
   // tablet screen
   @media screen and (min-width: $tablet) {
-    max-width: 768px;
     padding-bottom: 120px;
+
     background-image: url('../images/customers/customersBg-tabl.svg');
   }
 
   // desctop screen
   @media screen and (min-width: $desktop) {
-    max-width: 1280px;
     padding-top: 100px;
     padding-bottom: 200px;
-    padding-right: 123px;
+
     background-image: url('../images/customers/customersBg-desk.svg');
   }
+}
+
+.customers__container {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .customers__title {
