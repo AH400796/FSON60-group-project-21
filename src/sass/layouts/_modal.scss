@@ -272,7 +272,8 @@
   @extend %list;
 }
 
-.title__wrapper {
+.payment__title-wrapper,
+.delivery__title-wrapper {
   width: 100%;
 }
 
