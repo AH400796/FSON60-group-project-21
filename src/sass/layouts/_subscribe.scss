@@ -14,43 +14,30 @@
 }
 
 .subscription__container {
+  position: relative;
   padding-top: 95px;
-
-  background-image: url('../images/subscription/banana-mob-161@1x.png');
-
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 161px 78px;
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url('../images/subscription/banana-mob-322@2x.png');
-  }
 
   @media screen and (min-width: $tablet) {
     padding-top: 156px;
-
-    background-image: url('../images/subscription/banana-tab-281@1x.png');
-
-    background-size: 281px 136px;
-    background-position: top right 32px;
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/subscription/banana-tab-562@2x.png');
-    }
   }
 
   @media screen and (min-width: $desktop) {
     padding-top: 46px;
     padding-bottom: 64px;
+  }
+}
 
-    background-image: url('../images/subscription/banana-desk-546@1x.png');
+.subscription__thumb {
+  position: absolute;
+  top: 0;
 
-    background-position: top 0 right 16px;
-    background-size: 546px 266px;
+  @media screen and (max-width: ($tablet - 0.02px)) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/subscription/banana-desk-1092@2x.png');
-    }
+  @media screen and (min-width: $tablet) {
+    right: 0;
   }
 }
 

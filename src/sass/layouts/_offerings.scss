@@ -42,43 +42,34 @@
 }
 
 .offerings__container {
-  padding-top: 369px;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 280px 309px;
+  display: flex;
+  flex-direction: column;
 
-  background-image: url(../images/offerings/appleBg-mob-280@1x.png);
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/offerings/appleBg-mob-560@2x.png);
+.offerings__thumb {
+  @media screen and (max-width: ($tablet - 0.02px)) {
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  @media screen and (min-width: $tablet) {
-    padding-top: 454px;
-
-    background-image: url(../images/offerings/appleBg-tabl-704@1x.png);
-
-    background-position: top center;
-    background-size: 704px 394px;
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/appleBg-tabl-1408@2x.png);
-    }
+  @media screen and (max-width: ($desktop - 0.02px)) {
+    margin-bottom: 60px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-left: 640px;
+    margin-right: 90px;
+    min-width: 550px;
+  }
+}
+
+.offerings__decor-container {
+  @media screen and (min-width: $desktop) {
     padding-bottom: 57px;
     padding-top: 83px;
-
-    background-image: url(../images/offerings/appleBg-desk-550@1x.png);
-
-    background-position: bottom left;
-    background-size: 550px 604px;
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/offerings/appleBg-desk-1100@2x.png);
-    }
   }
 }
 
